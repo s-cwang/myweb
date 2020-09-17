@@ -21,7 +21,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/Sing-Chun_Sally_Wang.jpg" alt="" /></span>
-							<h1 id="title">Sing-Chun (Sally) Wang</h1>
+							<h1 id="title" style="font-size:17px">Sing-Chun (Sally) Wang</h1>
 							<p>Atmospheric Scientist</p>
 						</div>
 
@@ -62,7 +62,7 @@
 
 							<header>
 								<h2 class="alt" style="color:black;" align="center">Sally's Academic Corner</h2>
-								<p style="color:black;" align="center">Welcome to Sally Wang's Research Website! <br />
+								<p style="color:black;" align="center">Welcome to Sally Wang's Research Webite! <br />
 								Here you can learn about me and my work :) </p>
 							</header>
 
@@ -86,14 +86,14 @@
 
 
 								<h3 align="center">Biography</h3>
-							<p> Sing-Chun (Sally) Wang, Ph.D., obtained her bachelar of Biology and minor in Environmental Engineering and Earth Science from National Chang Kung University (NCKU), Taiwan. Her strong interests in Enverionmental Sciences motivated her studies in Atmospheric Sciences. </p>
+							<p> Sing-Chun (Sally) Wang, Ph.D., obtained her bachelar of Biology and minor in Environmental Engineering and Earth Science from National Cheng Kung University (NCKU), Taiwan. Her strong interests in Enverionmental Sciences motivated her studies in Atmospheric Sciences. </p>
 
 							<p> She obtained her doctoral degree in Atmospheric Science at University of Houston (UH), USA in May 2019. During her PhD study, she used GEOS-Chem model, satellite observations, and ground observations to study the transport patterns of Central American fires and to quantify the impact of the fires on Gulf Coast air quality. She also developed a machine learning model to predict burned area in the
 							South Central US. The developed model is able to obtain higher prediction accuracy and to provide better understanding of wildfire mechanisms in the South Central US. </p>
 
-							<p> From May 2019, Sally started working as a postdoctoral fellow at UH and her on-going research to investigate fire impact on weather patterns. </p>
+							<p> From March 2020, Sally started working as a postdoctoral fellow at Pacific Northwest National Laboratory and her on-going research is to utilize machine learning techniques to better predict wildfire burned area and understand the major controls of fires in the continental US. </p>
 
-							<p>You can find my complete curriculum vitae in PDF format <a href="https://drive.google.com/open?id=1XXcRYcTAP7V64nVXG4wuIeBGKDI4A5K5" target="_blank" title="CV"> here </a> and my google scholar page can be accessed <a href="https://scholar.google.com/citations?user=eaf7k7MAAAAJ&hl=en" target="_blank" title="Google scholar"> here.</a> </p>
+							<p>You can find my complete curriculum vitae in PDF format <a href="https://drive.google.com/file/d/1FtsYmgmkkmGxfmLItQE-Bp8COwxcc0T8/view?usp=sharing" target="_blank" title="CV"> here </a> and my google scholar page can be accessed <a href="https://scholar.google.com/citations?user=eaf7k7MAAAAJ&hl=en" target="_blank" title="Google scholar"> here.</a> </p>
 
 
 							
@@ -109,9 +109,16 @@
 								<h2 align="center">Research</h2>
 							</header>
 
+							<style>
+							img {
+  								display: block;
+  								margin-left: auto;
+  								margin-right: auto;
+}
+							</style>	
 							<figure>
-								<img src="images/kym-mackinnon-92di8_4sCt0-unsplash.jpg" alt="" width="800" height="350" align="center">
-								<figcaption>Trees covered in a blanket of wildfires. Photo by Kym MacKinnon on Unsplash.</figcaption>
+								<img src="images/smoke_air_quality.jpg" alt="" width="80%" height="auto" class="center">
+								<figcaption>Left: I took a picture at my neighborhood during Oregon wildfires on 09/15/20. Right: A Twitter post from Oregon Department of Environmental Quality features an illustration demonstrating the severity of the situation. The location of the left picture is noted by the white triangle in the map.</figcaption>
 							</figure>
 
 							<p>    </p>
@@ -125,15 +132,40 @@
 							and further influence weather and climate. Thus, I am mainly interested in the interactions 
 							among wildfires, air pollution, weather, and climate. </p>
 
-							<h3 align="center">Wildfire model</h3>
+
+
+							<h3 align="center">Fire smokes from Central America to US</h3>
+
+							<p>Fire emissions from Mexico and Central America are transported regularly to the U.S. Gulf Coast every spring under prevailing circulation patterns and affect U.S. air quality. We used a GEOS-Chem passive tracer simulation to develop the climatology of transport pathways of fire emissions over a long-term time period of April and May, 2002-2015 and estimate their adverse air quality effects for urban areas along the Gulf Coast. Considering both transport and fire emissions, we identified approximately 9% of the study period (59-88 days of 854 days) were influenced by the Central American fire emissions. The impacts on surface air quality were found at several major urban centers along the Gulf Coast, including Houston and Corpus Christi in TX, New Orleans in LA, Mobile in AL, and Pensacola in FL. Compared to clean maritime flow from the Gulf of Mexico, these events were estimated to result in average enhancements of maximum daily average 8-hr (MDA8) ozone and daily PM2.5 in the Gulf Coast cities of 3-12 ppbv and 2-5 microgram/m3, respectively.</p>
+
+							<figure>
+								<img src="images/figure7_submission.jpg" alt="" width="70%" height="auto">
+								<figcaption>(a) MOPITT CO total column observations for the fire-impact days (left), clean-Gulf days (middle), and the difference between fire-impact days and clean-Gulf days (right). (b) MODIS AOD observations from Terra satellite for the fire-impact days (left), clean-Gulf days (middle), and the difference between fire-impact days and clean-Gulf days (right). The sampling period is for April and May 2002 - 2015.</figcaption>
+							</figure>
+
+
+							<p> The details of this study and results can be found in <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JD028684" target="_blank" title="Wang et al. (2018) JGR"> Wang et al. (2018) JGR. </a> </p>
+
+
+
+
+							<h3 align="center">Wildfire model for South Central US</h3>
 
 							<p>One common method to explain and investigate the relationship between wildfires and factors is regression, while most data-driven regression methods would favor the majority class (here referring to unburned or small-burned grids) in the unevenly-distributed data (wildfire burned area data), which would lead to underestimation of large fires. To solve this, we integrated multiple machine learning algorithms to develop a prediction model of 0.5 deg x0.5 deg -gridded monthly wildfire burned area over the South Central United States during 2002-2015 and then use this model to identify the relative importance of the environmental drivers on the burned area for both the winter-spring and summer fire seasons of that region.</p>
 
-							<p> The details of this model and results can be found in <a href="https://www.atmos-chem-phys-discuss.net/acp-2019-885/#discussion" target="_blank" title="ACP paper"> Wang et al. (2019) ACP. </a> </p>
+							<figure>
+								<img src="images/Key_figure.jpg" alt="" width="50%" height="auto">
+								<figcaption>Map of monthly mean observed and predicted burned area averaged from 2002 to 2015 for the (a) winter-spring and (b) summer fire season.</figcaption>
+							</figure>
 
-							<h3 align="center">Wildfires and Climate Change</h3>
 
-							<p>As our prior studies showed the importance of climate variability on wildfire burned area, it is important to better understand how climate change affect wildfire in the future. The on-going research is to project future burned area by using the developed model. </p>
+							<p> The details of this model and results can be found in <a href="https://www.atmos-chem-phys-discuss.net/acp-2019-885/#discussion" target="_blank" title="Wang et al. (2020) ACP"> Wang et al. (2020) ACP. </a> </p>
+
+							<h3 align="center">A universal wildfire model for the continental US</h3>
+
+							<p>Based on the knowledge and experience of wildfire models for the South Central US, I'm currently developing a machine learning model to estimate burned area of the Continental US. By utilizing the novel interpretation method, we're able to open the black box of machine learning model to better understand the leading factors controlling burned area for different regions of the US for future management, prevention/mitigation, and projection. </p>
+
+							
 
 							
 
@@ -148,12 +180,12 @@
 								<h2 align="center">Publication</h2>
 							</header>
 
-							<p> <font size="4">• <u> <strong> Wang, S. -C. </strong> </u> and Wang, Y., Predicting wildfire burned area in South Central US using integrated machine learning techniques, Atmos. Chem. Phys. Discuss., in review, 2019.
-							</br>• Bernier, C., Wang, Y., Estes, M., Lei, R., Jia, B., <u> <b> Wang, S. -C. </b> </u> & Sun, J., Clustering Surface Ozone Diurnal Cycles to Understand the Impact of Circulation Patterns in Houston, TX, Journal of Geophysical Research: Atmospheres, in press, 2019.
-							</br>• Lei, R., Talbot, R., Wang, Y., <u> <b> Wang, S.-C. </b></u>, & Estes, M. (2019). Surface MDA8 ozone variability during cold front events over the contiguous United States during 2003–2017. Atmospheric Environment, 213, 359–366.
-							</br>• <u><b> Wang, S. -C. </b></u>, Wang, Y., Estes, M., Lei, R., Talbot, R., Zhu, L. & Pei, H. (2018). Transport mechanism of Central American fires to US Gulf coast and impacts on ozone. Journal of Geophysical Research: Atmospheres, 123(5), 8344-8361.
-							</br>• Lei, R., Talbot, R., Wang, Y.,<u> <b> Wang, S. -C. </b></u>, & Estes, M. (2018). Influence of Cold Fronts on Variability of Daily Surface O3 over the Houston-Galveston-Brazoria Area in Texas USA	during 2003-2016. Atmosphere, 9(5), 159.
-							</br>• Wang, Y., Jia, B., <u> <b> Wang, S. -C. </b> </u>, Estes, M., Shen, L., & Xie, Y. (2016). Influence of the Bermuda High on interannual variability of summertime ozone in the Houston–Galveston–Brazoria	region. Atmospheric Chemistry and Physics, 16(23), 15265-15276. </font> </p>
+							<p> <font size="4">• <u> <strong> Wang, S. -C. </strong> </u> and Wang, Y., Predicting wildfire burned area in South Central US using integrated machine learning techniques, Atmos. Chem. Phys., accepted, 2020. <a href="https://www.atmos-chem-phys-discuss.net/acp-2019-885/#discussion" target="_blank" title="Wang et al. (2020) ACP"> link </a>
+							</br>• Bernier, C., Wang, Y., Estes, M., Lei, R., Jia, B., <u> <b> Wang, S. -C. </b> </u> & Sun, J. (2019). Clustering Surface Ozone Diurnal Cycles to Understand the Impact of Circulation Patterns in Houston, TX, Journal of Geophysical Research: Atmospheres, Journal of Geophysical Research: Atmospheres, 124(12), 13457-13474. <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JD031725" target="_blank" title="Bernier et al. (2019) JGR"> link </a>
+							</br>• Lei, R., Talbot, R., Wang, Y., <u> <b> Wang, S.-C. </b></u>, & Estes, M. (2019). Surface MDA8 ozone variability during cold front events over the contiguous United States during 2003–2017. Atmospheric Environment, 213, 359–366. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1352231019303863" target="_blank" title="Lei et al. (2019) AE"> link </a>
+							</br>• <u><b> Wang, S. -C. </b></u>, Wang, Y., Estes, M., Lei, R., Talbot, R., Zhu, L. & Pei, H. (2018). Transport mechanism of Central American fires to US Gulf coast and impacts on ozone. Journal of Geophysical Research: Atmospheres, 123(5), 8344-8361. <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JD028684" target="_blank" title="Wang et al. (2018) JGR"> link </a>
+							</br>• Lei, R., Talbot, R., Wang, Y.,<u> <b> Wang, S. -C. </b></u>, & Estes, M. (2018). Influence of Cold Fronts on Variability of Daily Surface O3 over the Houston-Galveston-Brazoria Area in Texas USA	during 2003-2016. Atmosphere, 9(5), 159. <a href="https://www.mdpi.com/2073-4433/9/5/159/htm" target="_blank" title="Lei et al. (2018) Atmosphere"> link </a>
+							</br>• Wang, Y., Jia, B., <u> <b> Wang, S. -C. </b> </u>, Estes, M., Shen, L., & Xie, Y. (2016). Influence of the Bermuda High on interannual variability of summertime ozone in the Houston–Galveston–Brazoria	region. Atmospheric Chemistry and Physics, 16(23), 15265-15276. <a href="https://pdfs.semanticscholar.org/249d/38f7b02ac45b79f91a7c098d74e481e2de66.pdf" target="_blank" title="Wang et al. (2016) ACP"> link </a> </font> </p>
 
 						</div>
 					</section>
@@ -166,12 +198,11 @@
 								<h2 align="center">Contact</h2>
 							</header>
 
-							<p>Dr. Sing-Chun (Sally) Wang </br> Department of Earth and Atmospheric Sciences
-								</br>University of Houston
-								</br>3507 Cullen Blvd, #426H,
-								</br>Science and Research Building 1,
-								</br>Houston, TX77004
-								</br>E: swang54@uh.edu
+							<p>Dr. Sing-Chun (Sally) Wang </br> Atmospheric Sciences and Global Change Division
+								</br>Pacific Northwest National Laboratory
+								</br>902 Battelle Blvd,
+								</br>Richland, WA 99354
+								</br>E: sing-chun.wang@pnnl.gov or swang54@uh.edu
 							</p>
 
 						</div>
@@ -185,6 +216,7 @@
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: Sally & <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Last update: 2020/9/15.</li>					
 					</ul>
 
 			</div>
