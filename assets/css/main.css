@@ -29,6 +29,18 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+figure {
+/*  float: right; */
+  width: 100%;
+  text-align: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+/*  border: thin silver solid; */
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
 body {
 	line-height: 1;
 }
@@ -149,7 +161,7 @@ input, select, textarea {
 	}
 
 	header {
-		margin: 0 0 2em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 		header > p {
@@ -1753,6 +1765,11 @@ input, select, textarea {
 		}
 
 /* Image */
+	<style>
+		p.caption {
+  		font-size: 0.6em;
+		}
+	</style>
 
 	.image {
 		display: inline-block;
